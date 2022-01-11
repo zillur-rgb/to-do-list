@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  background-color: hsl(235, 21%, 11%);
+  height: 100vh;
+}
+
+header {
+  min-width: 20rem;
+  min-height: 20rem;
+  background-image: url(./images/bg-desktop-dark.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 0 25%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+h1.title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 1rem;
+  margin: 2rem 0;
+  text-transform: uppercase;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+input {
+  padding: 2rem 1rem;
+  font-size: 1.8rem;
+  color: #fff;
+  width: 75%;
+  background-color: hsl(237, 14%, 26%);
+  border-radius: 1rem 0 0 1rem;
+  caret-color: #e66465;
+}
+
+button {
+  width: 25%;
+  padding: 2rem 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1.6rem;
+  background-color: hsl(234, 39%, 85%);
+  font-weight: 700;
+  border-radius: 0 1rem 1rem 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+h1.clear-all {
+  font-size: 1.6rem;
+  text-align: center;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.tasks {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 2rem 25%;
+}
+
+.tasks .task,
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasks .task {
+  background-color: hsl(235, 24%, 19%);
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.circle {
+  min-width: 2rem;
+  min-height: 2rem;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: #ccc;
+  font-weight: 400;
+}
+
+img.right {
+  filter: invert(100%);
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.tick {
+  margin-right: 1rem;
+}
+.tick img {
+  width: 1.5rem;
+}
+
+.textContent {
+  word-wrap: break-word;
+}
+
+@media (max-width: 76.8rem) {
+  header,
+  .tasks {
+    padding: 1rem 10%;
+  }
+}
