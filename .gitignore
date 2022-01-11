@@ -16,5 +16,5 @@
 .prettierignore
 node_modules
 design
-README.md
+README-template.md
 style-guide.md
